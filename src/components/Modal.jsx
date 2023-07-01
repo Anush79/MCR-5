@@ -14,7 +14,7 @@ export default function PopUp({ children, setCloseModal, status , buttonText}) {
           }}
         >
           <div className="inner">
-            <h3>buttonText</h3>
+            <h3>{buttonText}</h3>
             <div> {children}</div>
             <button
               onClick={(e) => {
@@ -36,7 +36,7 @@ export default function PopUp({ children, setCloseModal, status , buttonText}) {
             setCloseModal(false);
           }}
         >
-          buttonText
+          {buttonText}
         </button>
       </>
     );
